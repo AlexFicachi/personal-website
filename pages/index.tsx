@@ -19,7 +19,7 @@ function BasicCard() {
       display: "flex",
       flexDirection: "column",
       alignItems:" center",
-      width: 400,
+      maxWidth: 400,
     }}>
         <div style={{
           height: 140,
@@ -58,6 +58,8 @@ const Home: NextPage = () => {
           marginTop: "4rem",
           marginBottom: "3.5rem",
           gap: "2.5rem",
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
         }}
       >
         <Image 
