@@ -6,7 +6,7 @@ import React, { LegacyRef, useEffect, useRef } from 'react'
 const Home: NextPage = () => {
     const linkRef = useRef() as LegacyRef<HTMLAnchorElement> | undefined;
     useEffect(()=> {
-        linkRef?.current?.click();
+        (linkRef as any)?.current?.click();
       }, [])
       const CALENDLY_LINK = "https://calendly.com/alexficachi"
     return (
